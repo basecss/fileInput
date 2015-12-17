@@ -1,0 +1,24 @@
+{
+  "name": "fileInput",
+  "version": "0.0.1",
+  "description": "Image upload and preview, based React.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basecss/fileInput.git"
+  },
+  "keywords": [],
+  "author": "basecss",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/basecss/fileInput/issues"
+  },
+  "homepage": "https://github.com/basecss/fileInput#readme",
+  "dependencies": {
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3"
+  }
+}
