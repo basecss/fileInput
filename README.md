@@ -9,7 +9,7 @@ var React = require('react')
 var ReactDOM = require('react-dom')
 
 // import component
-var FileInput = require('fileInput')
+var FileInput = require('./src/fileInput')
 
 var App = React.createClass({
 	
