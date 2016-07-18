@@ -1,0 +1,48 @@
+@charset 'utf-8';
+
+body {
+	margin: 0;
+	padding: 20px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.upload-button {
+	overflow: hidden;
+	position: relative;
+	float: left;
+	padding: 10px 30px;
+	background-color: #0099FF;
+	border-radius: 3px;
+	font-size: 18px;
+	color: #ffffff;
+	text-decoration: none;
+}
+.upload-button input {
+	position: absolute;
+	left: -50%;
+	top: -50%;
+	width: 200%;
+	height: 200%;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.thumbs-box {
+	padding-top: 20px;
+	overflow: hidden;
+	clear: both;
+}
+.thumbs-box > div {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	line-height: 200px;
+	border: 1px solid #dddddd;
+	border-radius: 3px;
+}
+.thumbs-box > div img {
+	max-width: 100%;
+	vertical-align: middle;
+}
