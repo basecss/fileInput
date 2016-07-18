@@ -44,3 +44,5 @@ ReactDOM.render(
 	document.querySelector(mountNode)
 )
 ```
+
+- [Online Demo](http://www.basecss.net/fileInput/)
