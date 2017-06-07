@@ -28,7 +28,7 @@ var App = React.createClass({
 				<FileInput onChange={this.onChange} multiple={false} />
 				{this.state.files.length ?
 				<div className="thumb-box">
-					{// using files}
+					{ /* using files */ }
 				</div> : null}
 			</div>
 		)
