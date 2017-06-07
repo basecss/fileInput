@@ -1,9 +1,6 @@
 'use strict'
-
 var React = require('react')
-
 module.exports = React.createClass({
-
 	getDefaultProps: function () {
 		return {
 			multiple: true,
@@ -11,13 +8,11 @@ module.exports = React.createClass({
 			className: 'upload-button'
 		}
 	},
-
 	propTypes: {
 		onChange: React.PropTypes.func.isRequired,
 		multiple: React.PropTypes.bool,
 		btnValue: React.PropTypes.string
 	},
-
 	_onChange: function (event) {
 		event.preventDefault()
 		var target = event.target
@@ -27,14 +22,15 @@ module.exports = React.createClass({
 		for (i = 0; i < count; i++) {
 			files[i].thumb = URL.createObjectURL(files[i])
 		}
-		// convert to array
+		// convert to array.
 		files = Array.prototype.slice.call(files, 0)
+		// image filter.
+		// if want to support more file type, you can modify or remove this snippet.
 		files = files.filter(function (file) {
 			return /image/i.test(file.type)
 		})
 		this.props.onChange(files, event)
 	},
-
 	render: function () {
 		var className = this.props.className
 		return (
@@ -44,5 +40,4 @@ module.exports = React.createClass({
 			</a>
 		)
 	}
-
 })
