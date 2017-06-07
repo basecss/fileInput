@@ -12,19 +12,16 @@ var ReactDOM = require('react-dom')
 var FileInput = require('./src/fileInput')
 
 var App = React.createClass({
-	
 	getInitialState: function () {
 		return {
 			files: []
 		}
 	},
-
 	onChange: function (files) {
 		this.setState({
 			files: this.state.files.concat(files)
 		})
 	},
-
 	render: function () {
 		return (
 			<div>
@@ -36,7 +33,6 @@ var App = React.createClass({
 			</div>
 		)
 	}
-
 })
 
 ReactDOM.render(
